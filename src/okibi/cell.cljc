@@ -21,7 +21,7 @@
      ([] (fire nil))
      ([log-path]
       (let [target (or log-path @log-default)
-            seed (str (io/file (actor-dir) "kotoba" "seed.edn"))
+            seed (str (io/file (actor-dir) "resources" "okibi" "kotoba" "seed.edn"))
             cycle (count (k/read-log target))
             r (autorun/beat {:sources (edn/sources seed) :sinks (edn/sinks seed)
                              :tx-id (str "okibi-beat-" cycle) :as-of (str "cycle-" cycle)

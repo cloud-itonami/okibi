@@ -5,7 +5,7 @@
   (:require [okibi.methods.okibi-edn :as oe]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/okibi/kotoba/seed.edn")
 
 (deftest loads-sources-and-sinks
   (is (>= (count (oe/sources seed-path)) 4) "≥4 sources")

@@ -8,7 +8,7 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/okibi/kotoba/seed.edn")
 (def ^:private tmp "data/test-autorun.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 (defn- srcs [] (oe/sources seed-path))

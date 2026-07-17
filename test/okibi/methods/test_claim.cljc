@@ -6,7 +6,7 @@
             [okibi.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "kotoba/seed.edn")
+(def seed-path "resources/okibi/kotoba/seed.edn")
 (defn- claims [] (c/from-nodes (oe/sources seed-path) (oe/sinks seed-path)))
 
 (deftest claim-shape-has-five-verification-facts

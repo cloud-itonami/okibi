@@ -44,8 +44,8 @@
   {:lex/id "thermalMatch"}]
 
  :actor/seed
- {:seed/file "kotoba/seed.edn"
-  :seed/ontology "kotoba/ontology.okibi.edn"
+ {:seed/file "resources/okibi/kotoba/seed.edn"
+  :seed/ontology "resources/okibi/kotoba/ontology.okibi.edn"
   :seed/sourcing :representative
   :seed/source-classes [:datacenter :food-plant :geothermal :refrigeration]
   :seed/sink-classes [:district-heat :greenhouse :hot-water :drying :absorption-cooling :space-heat]}
