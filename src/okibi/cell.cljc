@@ -12,7 +12,7 @@
             [okibi.methods.kotoba :as k]
             #?(:clj [clojure.java.io :as io])))
 
-#?(:clj (defn- actor-dir [] (-> (io/resource "okibi/cell.cljc") io/file .getParentFile)))
+#?(:clj (defn- actor-dir [] (-> (io/resource "okibi/cell.cljc") io/file .getParentFile .getParentFile .getParentFile)))
 #?(:clj (def ^:private log-default
           (delay (str (io/file (actor-dir) "data" "persisted" "okibi.matches.kotoba.edn")))))
 
