@@ -1,12 +1,12 @@
 #!/usr/bin/env bb
 ;; 燠 okibi — claim-emitter tests (the 澪 mio seam shape).
-;; Run:  bb --classpath 20-actors 20-actors/okibi/methods/test_claim.cljc
+;; Run:  bb --classpath src:test test/okibi/methods/test_claim.cljc
 (ns okibi.methods.test-claim
   (:require [okibi.methods.okibi-edn :as oe]
             [okibi.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/okibi/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- claims [] (c/from-nodes (oe/sources seed-path) (oe/sinks seed-path)))
 
 (deftest claim-shape-has-five-verification-facts

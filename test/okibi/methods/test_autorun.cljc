@@ -1,6 +1,6 @@
 #!/usr/bin/env bb
 ;; 燠 okibi — heartbeat (idempotent-by-content) tests.
-;; Run:  bb --classpath 20-actors 20-actors/okibi/methods/test_autorun.cljc
+;; Run:  bb --classpath src:test test/okibi/methods/test_autorun.cljc
 (ns okibi.methods.test-autorun
   (:require [okibi.methods.okibi-edn :as oe]
             [okibi.methods.autorun :as ar]
@@ -8,8 +8,8 @@
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/okibi/kotoba/seed.edn")
-(def ^:private tmp "20-actors/okibi/data/test-autorun.kotoba.edn")
+(def seed-path "kotoba/seed.edn")
+(def ^:private tmp "data/test-autorun.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 (defn- srcs [] (oe/sources seed-path))
 (defn- snks [] (oe/sinks seed-path))

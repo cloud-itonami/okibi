@@ -1,13 +1,13 @@
 #!/usr/bin/env bb
 ;; 燠 okibi — analyze/matching/datoms tests (incl. constitutional + physics invariants).
-;; Run:  bb --classpath 20-actors 20-actors/okibi/methods/test_analyze.cljc
+;; Run:  bb --classpath src:test test/okibi/methods/test_analyze.cljc
 (ns okibi.methods.test-analyze
   (:require [okibi.methods.okibi-edn :as oe]
             [okibi.methods.analyze :as a]
             [clojure.string :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/okibi/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 (defn- srcs [] (oe/sources seed-path))
 (defn- snks [] (oe/sinks seed-path))
 (defn- src [id] (first (filter #(= id (:id %)) (srcs))))

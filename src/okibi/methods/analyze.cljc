@@ -238,7 +238,7 @@
 
 #?(:clj
    (defn -main [& args]
-     (let [seed (or (first args) "20-actors/okibi/kotoba/seed.edn")
+     (let [seed (or (first args) "kotoba/seed.edn")
            ;; oe/sources+oe/sinks tolerate both the legacy bare-map seed.edn
            ;; shape and the datomized tx-data shape (single reconstitution
            ;; point — see okibi.methods.okibi-edn/classify).

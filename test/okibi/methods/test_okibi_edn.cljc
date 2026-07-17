@@ -1,11 +1,11 @@
 #!/usr/bin/env bb
 ;; 燠 okibi — seed loader tests.
-;; Run:  bb --classpath 20-actors 20-actors/okibi/methods/test_okibi_edn.cljc
+;; Run:  bb --classpath src:test test/okibi/methods/test_okibi_edn.cljc
 (ns okibi.methods.test-okibi-edn
   (:require [okibi.methods.okibi-edn :as oe]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def seed-path "20-actors/okibi/kotoba/seed.edn")
+(def seed-path "kotoba/seed.edn")
 
 (deftest loads-sources-and-sinks
   (is (>= (count (oe/sources seed-path)) 4) "≥4 sources")

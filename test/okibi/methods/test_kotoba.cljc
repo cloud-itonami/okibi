@@ -1,12 +1,12 @@
 #!/usr/bin/env bb
 ;; 燠 okibi — thermal-matching-ledger (content-addressed commit-DAG) tests.
-;; Run:  bb --classpath 20-actors 20-actors/okibi/methods/test_kotoba.cljc
+;; Run:  bb --classpath src:test test/okibi/methods/test_kotoba.cljc
 (ns okibi.methods.test-kotoba
   (:require [okibi.methods.kotoba :as k]
             [clojure.java.io :as io]
             [clojure.test :refer [deftest is run-tests]]))
 
-(def ^:private tmp "20-actors/okibi/data/test-ledger.kotoba.edn")
+(def ^:private tmp "data/test-ledger.kotoba.edn")
 (defn- clean! [] (let [f (io/file tmp)] (when (.exists f) (.delete f))))
 
 (def d1 [[":db/add" "okibi-match:dc-a~district-a" ":okibi.match/matched-kw" 540.0]
