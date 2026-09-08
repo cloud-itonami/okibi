@@ -2,7 +2,7 @@
 ;; 燠 okibi — claim-emitter tests (the 澪 mio seam shape).
 ;; Run:  bb --classpath src:test test/okibi/methods/test_claim.cljc
 (ns okibi.methods.test-claim
-  (:require [okibi.methods.okibi-edn :as oe]
+  (:require [kotoba.lang.text] [okibi.methods.okibi-edn :as oe]
             [okibi.methods.claim :as c]
             [clojure.test :refer [deftest is run-tests]]))
 
@@ -15,7 +15,7 @@
     (is (= "okibi" (:source-actor cl)))
     (is (= :waste-heat (:flow-class cl)))
     (is (number? (:order-delta-kwh cl)))
-    (is (not (clojure.string/blank? (:baseline-method cl))))
+    (is (not (kotoba.lang.text/blank? (:baseline-method cl))))
     (is (and (>= (:additionality cl) 0.0) (<= (:additionality cl) 1.0)))
     (is (keyword? (:measurement-source cl)))
     (is (string? (:double-count-key cl)))

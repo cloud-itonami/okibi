@@ -18,7 +18,7 @@
     G2  a match must pass the cascade + distance gates — an infeasible pair can NEVER
         become a match (no fabrication). A cooling LOAD is not a heat sink (the §1
         anti-pattern is unrepresentable — sinks are heat demands by construction)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [okibi.methods.okibi-edn :as oe])))
 
 ;; ── match params + physics ───────────────────────────────────────────────────
