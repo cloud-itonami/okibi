@@ -4,7 +4,7 @@
 (ns okibi.methods.test-analyze
   (:require [okibi.methods.okibi-edn :as oe]
             [okibi.methods.analyze :as a]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (def seed-path "resources/okibi/kotoba/seed.edn")

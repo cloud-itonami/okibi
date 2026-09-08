@@ -9,7 +9,7 @@
   transactions. Each tx CID = 'b' + sha256-hex over the canonical JSON. prev-cid
   chaining makes the log tamper-evident (verify-chain). Deterministic. No-server-key:
   appends to a local file only. A matching map, never a dispatch order."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])))
 
 (defn add [entity attr value] [":db/add" entity attr value])
