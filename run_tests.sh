@@ -4,11 +4,11 @@ set -uo pipefail
 cd "$(dirname "$0")"
 
 SUITES=(
-  "test/okibi/methods/test_okibi_edn.cljc"
-  "test/okibi/methods/test_analyze.cljc"
-  "test/okibi/methods/test_kotoba.cljc"
-  "test/okibi/methods/test_autorun.cljc"
-  "test/okibi/methods/test_claim.cljc"
+  "test/okibi/methods/test_okibi_edn.kotoba"
+  "test/okibi/methods/test_analyze.kotoba"
+  "test/okibi/methods/test_kotoba.kotoba"
+  "test/okibi/methods/test_autorun.kotoba"
+  "test/okibi/methods/test_claim.kotoba"
 )
 
 fail=0
