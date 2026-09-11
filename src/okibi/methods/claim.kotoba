@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 燠 okibi — claim emitter (the 澪 mio suite seam).
 (ns okibi.methods.claim
   "claim.cljc — 燠 okibi → 澪 mio flow-improvement CLAIM emitter (Energy Order

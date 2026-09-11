@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 燠 okibi — analyze → datoms → coverage (clj-native, pure stdlib).
 (ns okibi.methods.analyze
   "燠 okibi — the Thermal Matching Market core (Energy Order Protocol).

@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 燠 okibi — thermal-matching-ledger (content-addressed commit-DAG) tests.
-;; Run:  bb --classpath src:test test/okibi/methods/test_kotoba.cljc
+;; Run:  kbb --classpath src:test test/okibi/methods/test_kotoba.cljc
 (ns okibi.methods.test-kotoba
   (:require [okibi.methods.kotoba :as k]
             [clojure.java.io :as io]

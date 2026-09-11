@@ -33,8 +33,8 @@ hot-water demand and a 70°C drying demand, while a 65°C datacenter cannot serv
 
 ```bash
 ./20-actors/okibi/run_tests.sh                                   # 21 tests / 92 assertions
-bb --classpath 20-actors 20-actors/okibi/methods/analyze.cljc    # render the thermal matching map
-bb --classpath 20-actors 20-actors/okibi/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
+kbb --classpath 20-actors 20-actors/okibi/methods/analyze.cljc    # render the thermal matching map
+kbb --classpath 20-actors 20-actors/okibi/methods/autorun.cljc    # one heartbeat → append (idempotent-by-content)
 ```
 
 OBSERVATION ONLY. A matching map, **never a dispatch order**; unmet demand is a gap,
