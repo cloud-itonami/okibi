@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 燠 okibi — autonomous heartbeat: match → append thermal matches to the ledger.
 (ns okibi.methods.autorun
   "autorun.cljc — 燠 okibi deterministic, idempotent-by-content heartbeat

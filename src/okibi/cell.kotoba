@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 燠 okibi — cell entry (kotodama cell-runner contract, ADR-2605192415 §7.1).
 (ns okibi.cell
   "燠 okibi cell entry — kotodama-cell-runner contract (ADR-2605192415 §7.1).

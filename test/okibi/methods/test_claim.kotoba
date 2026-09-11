@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; 燠 okibi — claim-emitter tests (the 澪 mio seam shape).
-;; Run:  bb --classpath src:test test/okibi/methods/test_claim.cljc
+;; Run:  kbb --classpath src:test test/okibi/methods/test_claim.cljc
 (ns okibi.methods.test-claim
   (:require [kotoba.lang.text] [okibi.methods.okibi-edn :as oe]
             [okibi.methods.claim :as c]
