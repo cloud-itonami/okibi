@@ -17,7 +17,7 @@ Actor: **燠 okibi** · ADR-2606211200 · status **R0** · suite **Energy Order 
 - [x] test_autorun.cljc (idempotent-by-content)
 - [x] run_tests.sh (babashka) — **21 tests / 92 assertions green**
 - [x] README.md
-- [x] CLAUDE.md (actor-local invariants)
+- [x] AGENTS.md (actor-local invariants)
 - [x] G2 proven: cascade + distance gates; infeasible pairs never match
 
 ## Seed matching result (current)
